@@ -1,0 +1,13 @@
+:root {
+  --page-bg: #0c1018;
+  --text-primary: #e7ecf8;
+  --text-secondary: #6b7280;
+  --section-divider: rgb(148 163 184 / 0.45);
+}
+
+body[data-theme='light'] {
+  --page-bg: #f1f5ff;
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+  --section-divider: rgb(15 23 42 / 0.16);
+}

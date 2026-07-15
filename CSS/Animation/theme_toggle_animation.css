@@ -1,0 +1,31 @@
+body {
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+.theme-toggle {
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.theme-toggle .icon {
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+body[data-theme='dark'] .theme-toggle .icon-sun {
+  opacity: 0;
+  transform: rotate(-110deg) scale(0.35);
+}
+
+body[data-theme='dark'] .theme-toggle .icon-moon {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+body[data-theme='light'] .theme-toggle .icon-sun {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+body[data-theme='light'] .theme-toggle .icon-moon {
+  opacity: 0;
+  transform: rotate(110deg) scale(0.35);
+}
